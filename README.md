@@ -17,3 +17,6 @@ Download the [zipped folder](https://github.com/KatrineAshraf/Traffic-Simulation
 |![Down](assets/down.png) ![plus](assets/plus.png) ![LMouse](assets/l_mouse.png)| To add down road tile|
 |![Left](assets/left.png) ![plus](assets/plus.png) ![LMouse](assets/l_mouse.png)| To add left road tile|
 |![Right](assets/right.png) ![plus](assets/plus.png) ![LMouse](assets/l_mouse.png)| To add right road tile|
+
+>[!IMPORTANT]
+>To run the source code, clone this repository, and run the **'ui.py'** file.
