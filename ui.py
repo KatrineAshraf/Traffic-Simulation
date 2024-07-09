@@ -23,53 +23,10 @@ SCALE = grid.get_scale(screen)
 run = True
 pause = True
 mouse_action = None
-instruction_content = [
-    {"text": "Pause/Resume", "image": [pygame.image.load("assets/spacebar.png")]},
-    {"text": "Random Car Generation", "image": [pygame.image.load("assets/r.png")]},
-    {"text": "Clear all tiles", "image": [pygame.image.load("assets/tab.png")]},
-    {"text": "Add/Remove Car", "image": [pygame.image.load("assets/r_mouse.png")]},
-     {"text": "Clear all cars", "image": [pygame.image.load("assets/c.png")]},
-    {"text": "Insert a Green Tile", "image": [pygame.image.load("assets/g.png"), pygame.image.load("assets/l_mouse.png")]},
-    {"text": "Insert a Up Road", "image": [pygame.image.load("assets/up.png"), pygame.image.load("assets/l_mouse.png")]},
-    {"text": "Insert a Down Road", "image": [pygame.image.load("assets/down.png"),pygame.image.load("assets/l_mouse.png")]},
-    {"text": "Insert a Left Road", "image": [pygame.image.load("assets/left.png"),pygame.image.load("assets/l_mouse.png")]},
-    {"text": "Insert a Right Road", "image": [pygame.image.load("assets/right.png"),pygame.image.load("assets/l_mouse.png")]},
-    {"text": "Exit", "image": [pygame.image.load("assets/esc.png")]},
-]
-
-def display_instruction_manual():
-    # Define the dimensions and position of the instruction box
-        box_width = 300
-        box_height = 200
-        box_x = (WIDTH - box_width) // 2
-        box_y = (HEIGHT - box_height) // 2
-    
-    # Draw a semi-transparent background rectangle
-        pygame.draw.rect(screen, (200, 200, 200, 128), (box_x, box_y, box_width, box_height))
-    
-    # Display instruction text
-        font = pygame.font.Font(None, 24)
-        text_y = box_y + 20
-        for item in instruction_content:
-        # Display image
-            print(item)
-            for image in item["image"]:
-                screen.blit(image, (box_x + 30, text_y))
-        
-        # Display text
-            text_surface = font.render(item["text"], True, BLACK)
-            text_rect = text_surface.get_rect(midleft=(box_x + 100, text_y + 25))
-            screen.blit(text_surface, text_rect)
-        
-            text_y += 70  # Adjust vertical spacing as needed
-    
-    # Update the display
-        pygame.display.update()
 
 while run:
     CLOCK.tick(FPS)
     screen.fill(BLACK)
-    display_instruction_manual()
     for event in pygame.event.get():
         mouse_press = pygame.mouse.get_pressed()
         if event.type == pygame.QUIT:
