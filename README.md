@@ -1,4 +1,4 @@
-# To play the final product:
+# To play Traffic Simulation:
 Download the [zipped folder](https://github.com/KatrineAshraf/Traffic-Simulation-With-User-Input/blob/789f902fd162384ca07d16db7d6886aac843f660/Traffic%20Simulation.zip) in my repository, extract it, and run the .exe file.
 >[!CAUTION]
 > .exe file could mal-function if removed from the final extracted folder.
