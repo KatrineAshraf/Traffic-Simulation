@@ -1,8 +1,10 @@
 # <img src="assets/icon.png" width=50 height=50> Traffic Simulation </img>
 Traffic simulation is a simple game with python (pygame) that integrates system and discipline among cars in driving in traffic, with major probabilities of taking turns and switching roads whenever accessible.
 This game not only does it automates the traffic but also can accept any kind of input from users: Deleting cars, adding cars, changing roads, ...etc.\
+\
 ![Window App](assets/trial.png)
-<summary><h3><ins>Scientific Idea</ins></h3></summary>
+<details>
+<summary><h3><ins>Scientific Idea behind the App</ins></h3></summary>
 This game simply injects the idea of 1D Cell Automata where the idea is to consider a set of adjacent cells representing a street along which a car can move. The car jumps to its nearest neighbor cell unless this cell is already occupied by another car. Decelerate, if tailing distance to the next car is less than strength of pheromone suggests. Accelerate, if there is no pheromone or tailing distance is greater than suggested by pheromone strength.<br>
 <b>The rule of motion can be expressed by:</b><br>
 $x(t+1)  =  x_{in} (t) (1-x(t)) + x_{out}(t).x(t)$ <br>
