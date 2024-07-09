@@ -14,14 +14,14 @@ where $x$ is the cell, $x_{in}$ is the cell from which the car come, $x_{out}$ t
 ##  To directly play Traffic Simulation:
 + Download the [zipped folder](https://github.com/KatrineAshraf/Traffic-Simulation-With-User-Input/blob/789f902fd162384ca07d16db7d6886aac843f660/Traffic%20Simulation.zip) in my repository.
 + Extract the zip folder.
-+ Run the Traffic Simulation.exe file.
++ Run the `Traffic Simulation.exe` file.
 >[!CAUTION]
 > The executable file could mal-function if removed from the final extracted folder.
 
 ## To play from source code:
 + Clone the repository or download it and open it with any python interpreter.
 + `pip install pygame` or simply ignore if requirement is satisifed.
-+ Run the 'ui.py' file.
++ Run the `ui.py` file.
 
 ## The controls to the Traffic Simulation Application:
 | Controls | Description |
